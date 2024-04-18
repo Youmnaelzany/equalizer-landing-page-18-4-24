@@ -1,0 +1,72 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = "Frontend Mentor | Equalizer landing page" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon-32x32.png" />
+    <meta name="generator" content={Astro.generator} />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>{title}</title>
+  </head>
+  <body
+    class="bg-[#FCFAF9] bg-pattern-mb bg-cover bg-left-top bg-no-repeat md:bg-pattern-tb lg:bg-pattern-ds"
+  >
+    <slot />
+  </body>
+</html>
+<style is:global>
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+  }
+
+  html {
+    hanging-punctuation: first last;
+  }
+
+  body {
+    min-height: 100svh;
+    max-width: 1440px;
+    font-family: "IBM Plex Sans", sans-serif;
+  }
+
+  img,
+  picture,
+  svg,
+  video {
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+    shape-margin: 1rem;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    :has(:target) {
+      scroll-behavior: smooth;
+      scroll-padding-top: 3rem;
+    }
+  }
+</style>

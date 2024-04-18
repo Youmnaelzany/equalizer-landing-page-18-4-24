@@ -1,0 +1,54 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "@/styles/globals.css";
+---
+
+<Layout title="Frontend Mentor | Equalizer landing page">
+  <!-- Header -->
+  <header
+    class="header z-50 ml-[1.51rem] mt-10 md:ml-[2.44rem] md:max-2xl:mt-[3.87rem] lg:ml-[10.38rem]"
+  >
+    <img src="/assets/logo.svg" alt="logo" class="" />
+  </header>
+  <!-- Main Sections -->
+  <main>
+    <!-- Hero Section -->
+    <section
+      class="heroWrapper mx-6 mt-16 flex justify-between md:ml-[2.44rem] md:mt-[5.94rem] lg:ml-[10.31rem] lg:mt-[7.94rem]"
+    >
+      <!-- Hero Text -->
+      <div
+        class="flex w-[20.4375rem] flex-col gap-5 md:w-[32.5rem] md:gap-7 lg:gap-10"
+      >
+        <h1
+          class="text-[2.5rem] font-bold leading-[3rem] tracking-[-0.02844rem] text-[#191826] md:text-[4rem] md:leading-[4rem] md:tracking-[-0.04544rem] lg:w-[63.4375rem] lg:text-[5.5rem] lg:leading-[5.5rem] lg:tracking-[-0.0625rem]"
+        >
+          We make your music sound extraordinary.
+        </h1>
+        <p
+          class="text-base font-normal leading-relaxed text-[#191826] md:w-[32.125rem] md:text-lg md:leading-7 lg:w-[51.5625rem] lg:text-xl lg:leading-[2.125rem]"
+        >
+          A system audio equalizer specifically designed for Android and iOS.
+          Freely tune the way your music sounds with a professional grade
+          parametric EQ & volume mixer. Control bass, mids, treble, gain
+          control, reverb, and more!
+        </p>
+      </div>
+      <!-- Hero IMAGE -->
+      <div class="patternWarpper">
+        <img
+          src="/assets/bg-pattern-1.svg"
+          alt="pattern"
+          class="relative hidden md:right-[-4.438rem] md:top-[-13.625rem] md:max-2xl:inline-block lg:right-[-1.438rem] lg:top-[-16.625rem]"
+        />
+      </div>
+    </section>
+    <!-- Middle Section -->
+    <section
+      class="mt-[10.38rem] h-[37.5rem] w-[23.4375rem] rounded-xl bg-[#191826] md:ml-[2.06rem] md:mr-[2.44rem] md:mt-[15.56rem] md:w-[43.5rem] lg:mx-[10.31rem] lg:mt-[20.06rem] lg:w-[69.375rem]"
+    >
+    </section>
+  </main>
+</Layout>
+
+<style></style>
